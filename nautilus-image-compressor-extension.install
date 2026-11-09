@@ -1,0 +1,11 @@
+post_install() {
+  echo ":: Restart Nautilus to load the extension: 'nautilus -q'"
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  echo ":: Restart Nautilus to unload the extension: 'nautilus -q'"
+}
